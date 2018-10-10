@@ -1,0 +1,85 @@
+body {
+  /* Previously font-family: 'Helvetica Neue', Verdana, Helvetica, Arial, sans-serif; */
+  max-width: 700px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.5em;
+  color: #333;
+  line-height: 1.5em;
+}
+
+body, button {
+  font-family: monospace;
+}
+
+h1, h2, h3 {
+  color: #000;
+}
+h1 {
+  font-size: 2.5em
+}
+
+h2 {
+  font-size: 2em
+}
+
+h3 {
+  font-size: 1.5em
+}
+
+a {
+  text-decoration: none;
+  color: #09f;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* custom */
+body {
+  background: grey;
+}
+
+.title {
+  text-align: center;
+  white-space: pre;
+  color: yellow;
+}
+
+.game-view {
+  background: yellow;
+  padding: 20px;
+}
+
+.guesser-view {
+  display: flex;
+}
+
+.guesser-view div {
+  flex-basis: 100%;
+}
+
+.outcome-message {
+  color: #4169e1;
+}
+
+/* hangman SVG */
+#door1 {
+  transform-origin: 0% 100%;
+}
+
+#door2 {
+  transform-origin: 100% 100%;
+}
+
+line {
+  stroke: black;
+  stroke-width: 4;
+}
+
+.hide {
+  display: none;
+}
+
