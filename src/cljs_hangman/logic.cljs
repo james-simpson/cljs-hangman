@@ -16,6 +16,10 @@
   [answer guessed]
   (every? (partial has-been-guessed guessed) answer))
 
+(defn valid-guess?
+  [guess]
+  (not= guess ""))
+
 (defn incorrect-guesses
   [answer guessed]
   (remove (partial contains? (set answer)) guessed))
